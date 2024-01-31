@@ -1,7 +1,7 @@
 import jenkins
 
 try:
-    server = jenkins.Jenkins(
+    server = jenkins.Jenkins(  # type:ignore
         "http://localhost:8080",
         username="srazor11",
         password="1127c29719b12ea793cb353fddcea77649",
