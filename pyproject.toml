@@ -12,8 +12,8 @@ exclude = '''
 [tool.ruff]
 line-length = 100
 # Enable Pyflakes `E` and `F` codes by default.
-select = ["E", "F"]
-ignore = ["E501", "E741"]
+#select = ["E", "F"]
+#ignore = ["E501", "E741"]
 
 [tool.djlint]
 profile="django"

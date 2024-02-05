@@ -34,7 +34,6 @@ repos:
     rev: v0.0.285
     hooks:
       - id: ruff
-        alias: autoformat
         args: [ --fix ]
   - repo: https://github.com/Riverside-Healthcare/djLint
     rev: v1.19.16
