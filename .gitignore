@@ -1,0 +1,350 @@
+# ============================================================
+# ENVIRONMENT / SECRETS
+# ============================================================
+
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+
+secrets/
+.secret/
+.secrets/
+credentials/
+credentials.json
+service-account.json
+service-account*.json
+
+
+# ============================================================
+# DOCKER
+# ============================================================
+
+docker-compose.override.yml
+.docker/
+docker-data/
+
+# Docker environment files
+docker.env
+docker-compose.env
+
+# Docker volumes
+volumes/
+data/
+
+
+# ============================================================
+# PYTHON
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+venv.bak/
+env.bak/
+
+# Python packaging
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+develop-eggs/
+
+# Python caches
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+.pyright/
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python logs
+*.log
+
+
+# ============================================================
+# NODE.JS
+# ============================================================
+
+node_modules/
+
+# npm
+.npm/
+npm-debug.log*
+npm-error.log*
+
+# Yarn
+.yarn/
+.yarn-cache/
+.yarn-integrity
+yarn-debug.log*
+yarn-error.log*
+
+# pnpm
+.pnpm/
+.pnpm-debug.log*
+
+# Build output
+dist/
+build/
+out/
+
+# Node caches
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# TypeScript
+*.tsbuildinfo
+
+
+# ============================================================
+# AI / ML
+# ============================================================
+
+# Model files
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.gguf
+*.ggml
+*.h5
+*.hdf5
+*.pb
+*.tflite
+
+# AI model/cache directories
+models/
+model/
+checkpoints/
+weights/
+artifacts/
+
+# Hugging Face
+.cache/
+.huggingface/
+transformers_cache/
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Weights & Biases
+wandb/
+
+# TensorBoard
+runs/
+tensorboard/
+
+# LangChain / vector DB local data
+chroma/
+chroma_db/
+vectorstore/
+vector_store/
+faiss_index/
+faiss_indexes/
+
+# AI generated/cache data
+ai_cache/
+llm_cache/
+embedding_cache/
+
+
+# ============================================================
+# DATASETS / LARGE DATA
+# ============================================================
+
+data/
+datasets/
+dataset/
+raw_data/
+processed_data/
+
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.arrow
+
+# Uncomment if you DON'T want databases committed
+# *.db
+# *.sqlite
+# *.sqlite3
+
+
+# ============================================================
+# JSON / LOCAL CONFIG
+# ============================================================
+
+# Ignore local/private JSON
+*.local.json
+*.private.json
+*.secret.json
+*.config.json
+
+# Credentials / secrets
+credentials.json
+secrets.json
+config.local.json
+settings.local.json
+
+# Keep example configuration files
+!config.example.json
+!config.sample.json
+!config.template.json
+
+
+# ============================================================
+# PACKAGE / DEPENDENCY FILES
+# ============================================================
+
+# Python package caches
+pip-wheel-metadata/
+*.whl
+
+# Node packages
+node_modules/
+
+# Generated package/build files
+package-lock.json.tmp
+yarn.lock.tmp
+pnpm-lock.yaml.tmp
+
+
+# ============================================================
+# LOGS
+# ============================================================
+
+*.log
+logs/
+log/
+
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+pip-log.txt
+
+
+# ============================================================
+# TEMPORARY FILES
+# ============================================================
+
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.swo
+*.swn
+*~
+
+tmp/
+temp/
+.cache/
+
+
+# ============================================================
+# IDE / EDITOR
+# ============================================================
+
+.vscode/
+.idea/
+*.iml
+
+# VS Code local settings
+.vscode/settings.json
+
+# Jupyter
+.ipynb_checkpoints/
+
+
+# ============================================================
+# OS
+# ============================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+
+# Linux
+*~
+
+
+# ============================================================
+# GENERATED / BUILD ARTIFACTS
+# ============================================================
+
+generated/
+generated-files/
+release/
+releases/
+artifacts/
+
+
+# ============================================================
+# LOCAL DATABASE / VECTOR DATABASE
+# ============================================================
+
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+
+# Local vector databases
+qdrant_storage/
+milvus_data/
+weaviate_data/
+
+
+# ============================================================
+# CLOUD / LOCAL TOOLING
+# ============================================================
+
+.firebase/
+.vercel/
+.netlify/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Local Kubernetes
+.kube/
+*.kubeconfig
