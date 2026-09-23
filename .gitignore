@@ -23,6 +23,8 @@ credentials.json
 service-account.json
 service-account*.json
 
+bldc/
+
 
 # ============================================================
 # DOCKER
@@ -344,6 +346,7 @@ weaviate_data/
 .terraform/
 *.tfstate
 *.tfstate.*
+.terraform.*
 
 # Local Kubernetes
 .kube/
